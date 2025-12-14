@@ -200,7 +200,7 @@ else:
                 if submitted:
                     if not title or not description or not location or not date or not event_time:
                         st.error("All fields are required.")
-                    dt = datetime.datetime.combine(date, time)
+                    dt = datetime.datetime.combine(date, event_time)
                     add_event(title, description, dt, event_time, location, event_type, user['user_id'],price)
                     st.success("Event added")
                     st.rerun()

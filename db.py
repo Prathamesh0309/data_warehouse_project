@@ -255,7 +255,7 @@ def add_event(event_name, event_description, event_date, event_time, location, e
     cursor.execute(
         """
         INSERT INTO events (event_name, event_description, event_date, event_time, location, event_type, organizer_id, price)
-        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
         """,
         (event_name, event_description, event_date, event_time, location, event_type, organizer_id, price)
     )
